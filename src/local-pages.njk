@@ -1,0 +1,125 @@
+---
+layout: 'base.njk'
+section: page
+pagination:
+    data: pdv
+    size: 1
+    alias: pdv
+permalink: "{{ pdv.codec }}/"
+---
+<div style="
+    overflow: hidden;
+">
+<header class="page-container">
+  <div class="col">
+    <h3>{{ pdv.ville | lower }}</h3>
+  </div>
+  <div class="col">
+    {{ global.logo | svg | safe }}
+  </div>
+  <div class="col">
+    <a href="{{ pdv.site }}"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Je profite de l'offre</a>
+  </div>
+</header>
+<section class="intro ">
+  <div class="bg">
+  </div>
+  <div class="img">
+  <div class="col-1">
+        {% image
+        "src/assets/img/Header-Nikon-01.jpg",
+        "",
+        "(min-width: 1024px) 50vw, 100vw",
+        "",
+        "eager"
+      %}
+  </div>
+  <div class="col-3">
+    {% image
+        "src/assets/img/Header-Nikon-02.jpg",
+        "",
+        "(min-width: 1024px) 50vw, 100vw",
+        "",
+        "eager"
+      %}
+  </div>
+  </div>
+
+</section>
+<section class="page-container arg">
+  <div class="date"><span>50€</span>* de réduction sur vos verres <span>Nikon</span> de la gamme Sport. </div>
+  <div class="date">Profitez de l’offre du 2 octobre au 31 décembre 2023.</div>
+</section>
+<section class="page-container redac">
+<div class="cols">
+  <div class="col">
+      {% image
+        "src/assets/img/Header-Nikon-01.jpg",
+        "",
+        "(min-width: 1024px) 50vw, 100vw",
+        "",
+        "eager"
+      %}
+  </div>
+  <div class="col">
+    <p>Que vous soyez un athlète chevronné ou un sportif occasionnel, les Verres Optiques Nikon de la gamme Sports sont faits pour vous ! 
+<br>
+Ils permettent une vision nette et large et une perception des détails améliorée pour booster vos performances.
+</p>
+  </div>
+</div>
+<div class="cols">
+  <div class="col">
+    {% image
+        "src/assets/img/Nikon-Glass.jpg",
+        "",
+        "(min-width: 1024px) 50vw, 100vw",
+        "",
+        "eager"
+      %}
+  </div>
+  <div class="col">
+    <p>Pourquoi choisir les verres Essilor® Eyezen® ?
+Découvrez en magasin la palette des teintes de verres disponibles.
+<br>
+Pour révéler tout votre potentiel, bénéficiez de : 50€ de remise pour tout achat d'une monture équipée de verres optiques Nikon de la gamme Sports d'un montant minimum de 250€ TTC*
+</p>
+  </div>
+</div>
+</section>
+<footer class="page-container" style="margin-top: 23rem;">
+   <div class="mask">
+              {% image
+        "src/assets/img/mask2.svg",
+        "",
+        "(min-width: 1024px) 50vw, 100vw",
+        "",
+        "eager"
+      %}
+      </div>
+<h2>Je découvre cette offre dans mon magasin Optic 2000 <span>{{ pdv.ville | lower }}</span></h2>
+<div class="col">
+  <iframe
+  width="100%"
+  height="500"
+  frameborder="0" style="border:0"
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCU-bcMO9qToKzVXm7q8L7Quvxhh2VhEy0&q=Optic+2000+{{ pdv.adress }}+{{ pdv.cp }}+{{ pdv.ville }}"
+  allowfullscreen>
+</iframe>
+</div>
+<div class="col">
+  <p>{{ pdv.adress }}<br>{{ pdv.cp }} {{ pdv.ville }}</p>
+  <a href="https://www.facebook.com/{{ pdv.facebook }}"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a>
+  <a href="{{ pdv.site }}"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Je profite de l'offre</a>
+</div>
+<p class="legal">
+ <b>Mentions légales</b> :<br>
+* ??????
+</p>
+<div class="logo-bot">
+    {{ global.logo | svg | safe }}
+  </div>
+</footer>
+
+</div>
