@@ -33,7 +33,7 @@ body {
     content: '';
     width: 100%;
     height: 80vh;
-    background-color: #111720;
+    background-color: #000;
     position: absolute;
     left: 0;
     top: 0;
@@ -41,7 +41,7 @@ body {
   }
 }
 header {
-  background-color: #111720;
+  background-color: #000;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -81,7 +81,7 @@ header {
     color: white;
     font-size: 1em;
     text-align: center;
-    font-family: pangea ,  sans-serif;
+    font-family: 'pangea' ,  sans-serif;
     font-variation-settings: "wght" 400, "ital" 0, "XTDR" 0, "APRT" 0, "SPAC" 27, "INKT" 0, "SS01" 0, "SS02" 0, "SS03" 0;
     text-transform: capitalize;
     @media (min-width: 1024px) {
@@ -91,10 +91,10 @@ header {
   }
   a {
     position: relative;
-    color:#111720!important;
+    color:#000!important;
     z-index: 1;
     text-align: center;
-    font-family: pangea ,  sans-serif;
+    font-family: 'pangea' ,  sans-serif;
     font-variation-settings: "wght" 400, "ital" 0, "XTDR" 0, "APRT" 0, "SPAC" 27, "INKT" 0, "SS01" 1, "SS02" 1, "SS03" 1;
     transition: all .5s;
     font-size: 1.25em;
@@ -133,7 +133,7 @@ header {
 }
 
 .arg{
-  font-family: pangea ,  sans-serif;
+  font-family: 'pangea' ,  sans-serif;
   text-align: center;
   font-size: 5vw;
   position: relative;
@@ -292,14 +292,14 @@ header {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      font-family: pangea ,  sans-serif;
+      font-family: 'pangea' ,  sans-serif;
       font-size: 1.15em;
       @media (min-width: 1024px) {
         width: 50%;
       }
       font-variation-settings: "wght" 400, "ital" 0, "XTDR" 0, "APRT" 0, "SPAC" 27, "INKT" 0, "SS01" 1, "SS02" 1, "SS03" 1;
       h2 {
-        font-family: pangea ,  sans-serif;
+        font-family: 'pangea' ,  sans-serif;
         font-variation-settings: "wght" 600, "ital" 0, "XTDR" 50, "APRT" 100, "SPAC" 8, "INKT" 0, "SS01" 1, "SS02" 1, "SS03" 1;
         font-size: 1.15em;
         text-align: center;
@@ -413,21 +413,28 @@ height: 100%;}
 .img{
   position: absolute;
 display: flex;
+flex-direction: column;
   width: 100%;
   height: 100%;
   z-index:3;
   justify-content: space-between;
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
   .col-1{
     background-image: none;
-    width: 66%;
+    width: 100%;
+    display:none;
+    @media (min-width: 1024px) {
+      width: 50%;
+      display:block;
+    }}
+  .col-3{
+    background-image: none;
+    width: 100%;
     @media (min-width: 1024px) {
       width: 50%;
     }}
-  .col-3{
-      background-image: none;
-
-      overflow: hidden;
-    }
 }
 .intro-redac{
   width: 100%;
@@ -457,7 +464,7 @@ font-size: 2.5rem;}
 &::before{
   content: '';
   display: block;
-  background-color: #111720;
+  background-color: #000;
   width: 100%;
   height: 100%;
   position:absolute;
@@ -511,7 +518,7 @@ a {
   color:#111720;
   z-index: 1;
   text-align: center;
-  font-family: pangea ,  sans-serif;
+  font-family: 'pangea' ,  sans-serif;
   font-variation-settings: "wght" 400, "ital" 0, "XTDR" 0, "APRT" 0, "SPAC" 27, "INKT" 0, "SS01" 1, "SS02" 1, "SS03" 1;
   transition: all .5s;
   font-size: 1.25em;
@@ -558,7 +565,7 @@ a {
   }
 }
 h2 {
-  font-family: pangea ,  sans-serif;
+  font-family: 'pangea' ,  sans-serif;
   font-variation-settings: "wght" 600, "ital" 0, "XTDR" 50, "APRT" 100, "SPAC" 8, "INKT" 0, "SS01" 1, "SS02" 1, "SS03" 1;
   font-size: 1.5em;
   padding: 1em 3em;
