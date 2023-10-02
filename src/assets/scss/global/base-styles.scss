@@ -585,8 +585,10 @@ h2 {
       }
     }
     @media (min-width: 1024px) {
-      width: calc(50% - 4em);
+      width: calc(50% - 6em);
       padding-left: 3rem;
+      margin: 2em;
+
     }
   }
   @media (min-width: 1024px) {
