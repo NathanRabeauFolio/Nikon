@@ -587,7 +587,7 @@ h2 {
     @media (min-width: 1024px) {
       width: calc(50% - 6em);
       padding-left: 3rem;
-      margin: 2em;
+      margin-left: 2em;
 
     }
   }
@@ -614,6 +614,7 @@ h2 {
   margin-top: 5em;
   font-size: .75em;
   margin-bottom: 5em;
+  width: 100%;
 }
 
 .logo-bot {
