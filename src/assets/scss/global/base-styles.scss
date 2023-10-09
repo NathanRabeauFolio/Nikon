@@ -624,4 +624,17 @@ h2 {
 
   }
 
+  .logonikon{
+   
+    left: 0;
+    top: 0;
+    height: 1rem;
+    z-index: 10000;
+    display:block;
+    img{     width: 6rem;
+    }
 
+    @media (min-width: 1024px) {
+      display: none;
+    }
+  }
